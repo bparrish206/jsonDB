@@ -13,7 +13,7 @@ describe('Simple JSON Database', function() {
     .end(function(err, res) {
       expect(err).to.eql(null);
       console.log(res.body);
-      expect(res.body).to.eql({"Code rawks!": "My socks!"});
+      expect(res.body).to.eql({ 'Code rawks!': 'My socks!' });
       done();
     });
   });
