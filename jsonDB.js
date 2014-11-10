@@ -12,11 +12,11 @@ app.get('/', function(req, res){
 });
 
 app.post('/:key', function(req, res ){
-  var file = ('./DB/', + req.params.key + '.JSON');
-  fs.writeFile(file, JSON.stringify(req.body), function(err){
-    if (err) throw err;
-  }(req.body));
-  res.json(req.body);
+  res.writeHead(200);
+  var ws = fs.createWriteStream('/DB/'+ req.params.key + '.json');
+  ws.write(JSON.stringify(req.body));
+  ws.end();
+  res.end();
 });
 
 app.get('/:key', function(req, res){
@@ -24,7 +24,6 @@ app.get('/:key', function(req, res){
   var data = __dirname + file;
   res.sendFile(data);
   });
-
 
 app.listen(8080);
 module.exports = app;
