@@ -7,7 +7,7 @@ module.exports = function(grunt) {
       options: {
         node: true
       },
-      src: ['test/**/*.js', 'jsonDB.js', 'routes/**/*.js']
+      src: ['test/**/*.js', 'jsonDB.js']
     },
 
     simplemocha: {
