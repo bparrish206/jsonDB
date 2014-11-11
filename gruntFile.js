@@ -11,7 +11,7 @@ module.exports = function(grunt) {
     },
 
     simplemocha: {
-      src: ['test/**/*.js']
+      src: ['test/jsondbTest.js']
     }
   });
 
