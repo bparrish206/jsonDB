@@ -6,6 +6,7 @@ var fs = require('fs');
 chai.use(chaihttp);
 
 describe('Simple JSON Database', function() {
+
   it('should get JSON from a file', function(done){
     chai.request('http://localhost:8080')
     .get('/Brent')
