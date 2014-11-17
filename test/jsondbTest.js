@@ -12,7 +12,7 @@ describe('Simple JSON Database', function() {
     .get('/Brent')
     .end(function(err, res) {
       expect(err).to.eql(null);
-      expect(res.status).to.eql(200);
+      expect(res.body).to.eql({ "Code rawks!": "My socks!" });
       done();
     });
   });
