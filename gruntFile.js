@@ -9,8 +9,12 @@ module.exports = function(grunt) {
       },
       src: ['test/**/*.js', 'jsonDB.js']
     },
+
+    simplemocha: {
+      src: ['test/**/*.js']
+    }
   });
 
-  grunt.registerTask('test', ['jshint']);
+  grunt.registerTask('test', ['jshint', 'simplemocha']);
   grunt.registerTask('default', 'test');
 };
