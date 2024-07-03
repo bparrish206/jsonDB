@@ -18,8 +18,8 @@
   "homepage": "https://github.com/bparrish206/jsonDB",
   "devDependencies": {
     "chai": "^1.9.2",
-    "chai-http": "^1.0.0",
-    "grunt": "^0.4.5",
+    "chai-http": "^5.0.0",
+    "grunt": "^1.0.0",
     "grunt-cli": "^0.1.13",
     "grunt-contrib-jshint": "^0.10.0",
     "grunt-jscs": "^0.8.1",
